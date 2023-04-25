@@ -4,12 +4,11 @@ pipeline{
     string(name:'branch',defaultValue:'main',description:'this is the main branch for production deployment')  
   }
   stages{
-    stage{
-      steps{
-        sh 'touch bharath.txt'      
-      }
-    
-    }
+    stage('testing){
+          steps{
+            sh 'touch bharath.txt'      
+          }
+     }
   
   }
 
