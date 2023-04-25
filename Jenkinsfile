@@ -9,7 +9,7 @@ pipeline{
     password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'A secret password')
 }
   stages{
-    stage('testing){
+    stage('testing'){
           steps{
             sh 'touch bharath.txt'      
           }
